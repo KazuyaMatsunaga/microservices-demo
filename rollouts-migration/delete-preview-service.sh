@@ -1,0 +1,1 @@
+kubectl get service -n argo |awk '/*-preview/{print $1}' |xargs kubectl delete service -n microservices-demo
